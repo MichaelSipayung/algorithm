@@ -142,7 +142,12 @@ CMakeFiles/algorithm.dir/main.cpp.obj: ../main.cpp \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
-  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/list \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc
 
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
@@ -305,6 +310,8 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/pthread.h:
 
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h:
+
 D:/mingw/mingw64/x86_64-w64-mingw32/include/process.h:
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
@@ -405,6 +412,8 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream:
 
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/list:
+
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h:
@@ -428,3 +437,9 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/limits:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc:
