@@ -144,4 +144,6 @@ CMakeFiles/algorithm.dir/main.cpp.obj: D:\c_project\algorithm\main.cpp \
  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h \
  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
- D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc
+ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc \
+ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
+ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h

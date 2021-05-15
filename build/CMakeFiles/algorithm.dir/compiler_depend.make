@@ -147,7 +147,9 @@ CMakeFiles/algorithm.dir/main.cpp.obj: ../main.cpp \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
-  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h
 
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
@@ -293,6 +295,8 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/locale.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric:
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/stdio.h:
 
@@ -443,3 +447,5 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_list.h:
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/list.tcc:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h:
