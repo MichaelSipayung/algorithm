@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <list>
 #include <numeric>
+#include <iterator>
 
 int main(int, char**) {
     std::cout << "Hello, algorithm library !\n";
@@ -82,6 +83,43 @@ int main(int, char**) {
         std::cout<<i<<"|";
     }
     std::cout<<"]"<<std::endl;
+
+    std::cout<<"Fill_n()"<<std::endl;
+    std::fill_n(oriVec.begin(),oriVec.size(),78); //fill all element with number :  78
+    std::cout<<"After fill with n value \t:[";
+    for (auto &i : oriVec)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"Back inserter , assign a value to container  "<<std::endl;
+    std::vector<int> back_inser;
+    auto it=std::back_inserter(back_inser);
+    *it=90;
+    //similiar to push_back == back_inserter
+    std::cout<<"After call back inserter \t:  [";
+    for (auto &i : back_inser)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    for(auto i=1;i<10;++i){
+        *it=(i+2);
+        ++it;
+    }
+    std::cout<<"Then Call again \t: [";
+    for (auto &i : back_inser)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+     
+    
+
+
+
 
 
 
