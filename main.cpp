@@ -115,17 +115,53 @@ int main(int, char**) {
     }
     std::cout<<"]"<<std::endl;
     
-     
+    std::cout<<"Noted , back inserter have a purpose to make an iterator, in special case it's work well in algorithm"<<std::endl;
+    std::vector<int> emptyVe;
+    std::cout<<"Before call back inserter and fill_n .. size \t:["<<emptyVe.size()<<"]"<<std::endl;
+    std::fill_n(std::back_inserter(emptyVe) , 10, 0);
+    std::cout<<"After call back inserter and fill_n .. size \t:["<<emptyVe.size()<<"]"<<std::endl;
     
+    std::cout<<"Copy Algorithm "<<std::endl;
+    std::cout<<"Copy built-in array "<<std::endl;
+    int aCop[]={1,2,3,4,5,6,7,8,9};
+    int destCop[sizeof(aCop)/sizeof(*aCop)]; //int a[9] refers to this size
+    std::copy(std::begin(aCop) , std::end(aCop), destCop);
+    std::cout<<"After copt , destination hold \t: [";
+    for(auto i=std::begin(destCop) ; i<=std::end(destCop);++i){
+        std::cout<<*i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
 
+    std::cout<<"std::replace"<<std::endl;
+    std::list<int> listAgeP={1,2,3,42,1,1,2,3};
+    std::cout<<"before replace value \t:[";
+    for (auto &i : listAgeP)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
 
+    std::cout<<"After replace\t:[";
+    std::replace(listAgeP.begin(),listAgeP.end(),1,42); //replace instance 1 to 42
 
+    for (auto &i : listAgeP)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
 
-
+    std::cout<<"Replace copy"<<std::endl;
+    std::list<int> replaceCopy;
+    std::replace_copy(listAgeP.begin() , listAgeP.end(),std::back_inserter(replaceCopy),42,100);
+    std::cout<<"After call replace copy \t:[";
+    for (auto &i : replaceCopy)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
 
 
     
-
 
 
 }
