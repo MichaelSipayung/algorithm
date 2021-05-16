@@ -4,6 +4,10 @@
 #include <list>
 #include <numeric>
 #include <iterator>
+void Elimdups(std::vector<std::string> &words);
+void Elimdups(std::vector<int> &words);
+void Elimdups(std::vector<double> &words);
+bool isShorter(const std::string &s1,const std::string &s2);
 
 int main(int, char**) {
     std::cout << "Hello, algorithm library !\n";
@@ -160,8 +164,132 @@ int main(int, char**) {
     }
     std::cout<<"]"<<std::endl;
 
+    std::cout<<"Sort Algorithm"<<std::endl;
+    std::cout<<"test std::unique"<<std::endl;
+    std::vector<int> nameUni={1,2,3,41,1,2};
+    std::sort(nameUni.begin(),nameUni.end());
 
+    std::cout<<"Resul before call std::unique\t:[";
+    for (auto &i : nameUni)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    auto uni=std::unique(nameUni.begin(),nameUni.end()); //point to unique element 
+
+    std::cout<<"Resul after call std::unique\t:[";
+    for (auto &i : nameUni)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    nameUni.erase(uni,nameUni.end());
+    std::cout<<"After Erase element \t:[";
+    for (auto &i : nameUni)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"call unique element"<<std::endl;
+    std::vector<std::string> callUniq ={"i","stand","in","his","amazing","grace","i","stand"};
+    std::cout<<"before call unique function , value \t:[";
+    for (auto &i : callUniq)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+    Elimdups(callUniq);
+    std::cout<<"After call unique function \t:[";
+    for (auto &i : callUniq)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"Overloaded for list"<<std::endl;
+    std::vector<int> loadData={1,2,33,1,2,1,23,1,1};
+    std::cout<<"before call unique function , value \t:[";
+    for (auto &i : loadData)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+    Elimdups(loadData);
+    std::cout<<"After call unique function \t:[";
+    for (auto &i : loadData)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"Custumizing algorithm "<<std::endl;
+    std::vector<std::string> orThat={"fox","jumps","over","quick","red","slow","the","turtle","Over"};
+    std::cout<<"Original Vector \t:[";
+    for (auto &i : orThat)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+    std::cout<<"After Custom Short\t:[";
+    std::sort(orThat.begin(), orThat.end() , isShorter);// see the short word, compare each word 
+    for (auto &i : orThat)
+    {
+        std::cout<<i<<"|";
+    }
+    
+    std::cout<<"]"<<std::endl;
+    std::vector<std::string> orThatV={"fox","jumps","over","quick","red","slow","the","turtle","Over"};
+    
+    std::cout<<"Call stable order, then what happen\t:[";
+    Elimdups(orThatV);
+    std::stable_sort(orThatV.begin(),orThatV.end(),isShorter);
+    for (auto &i : orThatV)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+    std::cout<<"Lambada Function \t:[";
+    auto f = [] (int &a,int &b){
+        auto temp=a;
+        a=b;
+        b=temp;
+    };
+    auto a=12,b=13;
+    f(a,b);
+    std::cout<<"Nilai a\t:"<<a<<"\nNilai b\t:"<<b<<std::endl;
+    std::cout<<"Change is ordinary shorter function to lambada function\t: "<<std::endl;
+    std::string aLam="michael";
+    std::string bLam="Sipayung";
+    auto testLamShort=[](const std::string &a,const std::string &b){
+        return a.size()<b.size();
+    };
+    std::cout<<testLamShort(aLam,bLam)<<std::endl;
     
 
 
+}
+void Elimdups(std::vector<std::string> &words){
+    std::sort(words.begin(),words.end());
+    auto  end_unique = std::unique(words.begin(),words.end());
+    words.erase(end_unique,words.end());
+}
+void Elimdups(std::vector<int> &words){
+    std::sort(words.begin(),words.end());
+    auto  end_unique = std::unique(words.begin(),words.end());
+    words.erase(end_unique,words.end());
+}
+
+void Elimdups(std::vector<double> &words){
+    std::sort(words.begin(),words.end());
+    auto  end_unique = std::unique(words.begin(),words.end());
+    words.erase(end_unique,words.end());
+}
+bool isShorter(const std::string &s1,const std::string &s2){
+    return s1.size() <s2.size();
 }
