@@ -142,7 +142,21 @@ CMakeFiles/algorithm.dir/lambda.cpp.obj: ../lambda.cpp \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
   D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
-  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
+  D:/mingw/mingw64/x86_64-w64-mingw32/include/math.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc
 
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
@@ -253,6 +267,8 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
+D:/mingw/mingw64/x86_64-w64-mingw32/include/math.h:
+
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
@@ -262,6 +278,8 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple:
 
 D:/mingw/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
@@ -428,3 +446,27 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitial
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h:
 
 D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc:
