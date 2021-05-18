@@ -522,29 +522,29 @@ ContinuousMemCheck/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousMemCheck.dir\build.make CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+lambda.obj: lambda.cpp.obj
+.PHONY : lambda.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+lambda.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.obj
+.PHONY : lambda.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+lambda.i: lambda.cpp.i
+.PHONY : lambda.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.i
-.PHONY : main.cpp.i
+lambda.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.i
+.PHONY : lambda.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+lambda.s: lambda.cpp.s
+.PHONY : lambda.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/main.cpp.s
-.PHONY : main.cpp.s
+lambda.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.s
+.PHONY : lambda.cpp.s
 
 # Help Target
 help:
@@ -586,9 +586,9 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... algorithm
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... lambda.obj
+	@echo ... lambda.i
+	@echo ... lambda.s
 .PHONY : help
 
 

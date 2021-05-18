@@ -8,6 +8,11 @@ void Elimdups(std::vector<std::string> &words);
 void Elimdups(std::vector<int> &words);
 void Elimdups(std::vector<double> &words);
 bool isShorter(const std::string &s1,const std::string &s2);
+struct Sum{
+    int sum{0};
+    void operator ()(int n){sum+=n;}
+};
+void bigges(std::vector<std::string> &words,std::vector<std::string>::size_type sz);
 
 int main(int, char**) {
     std::cout << "Hello, algorithm library !\n";
@@ -270,9 +275,67 @@ int main(int, char**) {
         return a.size()<b.size();
     };
     std::cout<<testLamShort(aLam,bLam)<<std::endl;
+    std::vector<std::string> dataTest={"fox","jumps","over","quick","red","slow","the","turtle","over"};
+    /*std::sort(dataTest.begin(),dataTest.end(),isShorter);
+    std::cout<<"After sort , and implement predicate]\t:[";
+    for (auto &i : dataTest)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    */
+    Elimdups(dataTest);
+
+    std::cout<<"before calling stable sort\t:[";
+    for (auto &i : dataTest)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    
+    std::cout<<"Test stable sort \t:[";
+
+    std::stable_sort(dataTest.begin(),dataTest.end(),isShorter);
+    for (const auto &i : dataTest)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"Lambada Function\t:[";
+    auto flam=[]{return 42;};
+    std::cout<<flam()<<"]"<<std::endl;
+    
+    std::vector<std::string> applyLam={"fox","jumps","over","quick","red","slow","the","turtle","over"};
+    std::stable_sort(applyLam.begin(),applyLam.end(),[](const std::string &a,const std::string &b ){return a.size()<b.size(); });
+    std::cout<<"Show data after call predicates\t:[";
+    for (auto &i : applyLam)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+
+    std::cout<<"Using for each "<<std::endl;
+    std::vector<int> nums{3,4,2,8,15,267};
+    auto print=[] (const int &n){std::cout<<" "<<n;};
+    std::cout<<"Before \t:[";
+    std::for_each(nums.cbegin(),nums.cend(),print);
+    std::cout<<"]"<<std::endl;
+    std::cout<<"Sum them \t:[";
+    auto cSum =std::accumulate(nums.cbegin(),nums.cend(),0);
+    std::cout<<cSum<<"]"<<std::endl;   
+    std::for_each(nums.begin(),nums.end(),[](int &n){n++;});
+    Sum s= std::for_each(nums.begin(), nums.end(),Sum());
+    std::cout<<"After \t:[";
+    std::for_each(nums.cbegin(),nums.cend(),print);
+    std::cout<<"]"<<std::endl;
+    std::cout<<"And their sum \t: [";
+    std::cout<<s.sum <<"]"<<std::endl;
+    
     
 
-
+    //auto testLamdaEx =[sz](int a,int b){return a  <sz;};
+    
 }
 void Elimdups(std::vector<std::string> &words){
     std::sort(words.begin(),words.end());
@@ -293,3 +356,22 @@ void Elimdups(std::vector<double> &words){
 bool isShorter(const std::string &s1,const std::string &s2){
     return s1.size() <s2.size();
 }
+
+void bigges(std::vector<std::string> &words,std::vector<std::string>::size_type sz){
+    Elimdups(words);
+    std::stable_sort(words.begin(),words.end(),isShorter);
+
+}
+
+// void biggies(std::vector<std::string> &words,std::vector<std::string>::size_type sz)
+// {
+//  Elimdups(words); // put words in alphabetical order and removeduplicates
+//  // sort words by size, but maintain alphabetical order for words of the same size
+//  stable_sort(words.begin(), words.end(), [](const string &a, const string &b) { return a.size() < b.size();});
+//  // get an iterator to the first element whose size() is >= sz
+//  auto wc = find_if(words.begin(), words.end(), [sz](const string &a) { return a.size() >= sz; });
+//  // compute the number of elements with size >= sz
+//  auto count = words.end() - wc; cout << count << " " << make_plural(count, "word", "s") << " of length " << sz << " or longer" << endl;
+//  // print words of the given size or longer, each one followed by a space
+//  for_each(wc, words.end(), [](const string &s){cout << s << " ";}); cout << endl;
+// }

@@ -68,28 +68,28 @@ include CMakeFiles/algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/algorithm.dir/flags.make
 
-CMakeFiles/algorithm.dir/main.cpp.obj: CMakeFiles/algorithm.dir/flags.make
-CMakeFiles/algorithm.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/algorithm.dir/main.cpp.obj: CMakeFiles/algorithm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\c_project\algorithm\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/main.cpp.obj"
-	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/main.cpp.obj -MF CMakeFiles\algorithm.dir\main.cpp.obj.d -o CMakeFiles\algorithm.dir\main.cpp.obj -c D:\c_project\algorithm\main.cpp
+CMakeFiles/algorithm.dir/lambda.cpp.obj: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/lambda.cpp.obj: ../lambda.cpp
+CMakeFiles/algorithm.dir/lambda.cpp.obj: CMakeFiles/algorithm.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\c_project\algorithm\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/lambda.cpp.obj"
+	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/algorithm.dir/lambda.cpp.obj -MF CMakeFiles\algorithm.dir\lambda.cpp.obj.d -o CMakeFiles\algorithm.dir\lambda.cpp.obj -c D:\c_project\algorithm\lambda.cpp
 
-CMakeFiles/algorithm.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/main.cpp.i"
-	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\c_project\algorithm\main.cpp > CMakeFiles\algorithm.dir\main.cpp.i
+CMakeFiles/algorithm.dir/lambda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/lambda.cpp.i"
+	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\c_project\algorithm\lambda.cpp > CMakeFiles\algorithm.dir\lambda.cpp.i
 
-CMakeFiles/algorithm.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/main.cpp.s"
-	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\c_project\algorithm\main.cpp -o CMakeFiles\algorithm.dir\main.cpp.s
+CMakeFiles/algorithm.dir/lambda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/lambda.cpp.s"
+	D:\mingw\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\c_project\algorithm\lambda.cpp -o CMakeFiles\algorithm.dir\lambda.cpp.s
 
 # Object files for target algorithm
 algorithm_OBJECTS = \
-"CMakeFiles/algorithm.dir/main.cpp.obj"
+"CMakeFiles/algorithm.dir/lambda.cpp.obj"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
-algorithm.exe: CMakeFiles/algorithm.dir/main.cpp.obj
+algorithm.exe: CMakeFiles/algorithm.dir/lambda.cpp.obj
 algorithm.exe: CMakeFiles/algorithm.dir/build.make
 algorithm.exe: CMakeFiles/algorithm.dir/linklibs.rsp
 algorithm.exe: CMakeFiles/algorithm.dir/objects1.rsp
