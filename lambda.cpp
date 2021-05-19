@@ -5,9 +5,11 @@
 #include <cmath>
 #include <functional> //library bind function 
 #include <fstream>
+#include <iterator>
+
 using std::placeholders::_1;
 using std::placeholders::_2;
-
+bool checkSizeF(const std::string &s,std::string::size_type sz);
 void fcn1();
 void fcn2();
 void fcn3();
@@ -19,6 +21,8 @@ void transformData3(std::vector<int> &trans);
 bool checkSize(const std::string &s,std::string::size_type sz);
 bool isShorter(const std::string &a, const std::string &b);
 std::ostream &print(std::ostream &os,const std::string &s,char c);
+std::ostream &outPr(std::ostream &osTest,const std::string &sTest,char c);
+
 
 int main(){
     std::cout<<"Capture list \t: lamda passing paramtere by value"<<std::endl;
@@ -68,6 +72,49 @@ int main(){
     std::for_each(testWords1.begin(),testWords1.end(),std::bind(print,std::ref(os) ,  _1,'\n')); //print to output stream 
     buf.close();
     //noted std::ostream defined in header iostream 
+    //auto checkSize= std::bind(checkSize,_1,6);
+    auto checkTheirsiz = std::bind(checkSizeF,_1,6);
+    std::string forCheck="michael";
+    std::cout<<"length string \t:["<<forCheck.length()<<"]"<<std::endl;
+    bool prove= checkTheirsiz(forCheck);
+    std::cout<<"return \t:[" <<prove <<"]"<<std::endl;
+    std::vector<std::string> wordImp={"michael","test" ,"jack"};;
+
+    auto testImple =std::find_if(wordImp.begin(),wordImp.end(),std::bind(checkSizeF,_1,sz));
+    std::vector<int> testSmalln {1,2,3,4,13};
+    auto num=13;
+    auto findNumTh = std::find(testSmalln.begin(), testSmalln.end() , num);
+    std::cout<<"Number 3 found in \t:[" << *findNumTh <<"]" << std::endl; 
+    std::cout<<"std::find_if work \t:[" ;
+    auto even = [] (int i) {return  i%2==0;};
+    auto findIfWork = std::find_if(testSmalln.begin() , testSmalln.end() , even);
+    std::cout<<"find if the " << *findIfWork <<"is even number " <<std::endl;
+    std::vector <std::string> local {"local","global","minimum" , "maximum"};  
+    std::string::size_type szTest=6;
+    auto testImpWc = std::find_if(local.begin(),local.end() , std::bind(checkSizeF,std::placeholders::_1, szTest)) ; // great bind argument 
+    //note  std::find_if need callable object 
+    std::cout<<" Find if word in a vector is less greater  than 6\t:[ " << *testImpWc <<"]"<<std::endl;
+    std::cout<<"Using bind to rearrange argument" <<std::endl;
+    std::vector<std::string> reArr {"michael","jack","test" ,"shor","hack","joy","great"};
+    //std::sort(reArr.begin(),reArr.end(),isShorter);
+    //second version 
+    std::sort(reArr.begin(),reArr.end() , std::bind(isShorter, std::placeholders::_2 , std::placeholders::_1));//implementation std::bind test reorder element
+    for (auto &i : reArr)
+    {
+        std::cout<<i<<"|";
+    }
+    std::cout<<"]"<<std::endl;
+    std::filebuf imBind;
+    imBind.open("writeThat.txt" , std::ios::out);
+    std::ostream writeT(&imBind);
+    std::for_each(reArr.begin(),reArr.end(),std::bind(outPr,std::ref(writeT),_1,'\n'));
+
+
+
+
+
+
+
 
 }
 void fcn1(){ //passing by reference
@@ -100,9 +147,6 @@ void fcn3(){
     std::string x="13";
     std::cout<<"implicit capture \t:["<<fx("213")<<"]"<<std::endl;
     std::cout<<" by default value in capture variable can't change , except we using mutable key "<<std::endl ;
-
-
-
 }
 
 void bigges(std::vector<std::string> &words,std::vector<std::string>::size_type sz,std::ostream &os=std::cout,char c=' '){
@@ -191,7 +235,13 @@ bool isShorter(const std::string &a, const std::string &b){
     return a.size()>b.size();
 }
 
-
 std::ostream &print(std::ostream &os,const std::string &s,char c){
     return os<<s<<c;
+}
+
+bool checkSizeF(const std::string &s,std::string::size_type sz){
+    return s.size()>=sz;
+}
+std::ostream &outPr(std::ostream &osTest,const std::string &sTest,char c){
+    return osTest<<sTest<<c;
 }
