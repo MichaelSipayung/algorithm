@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/c_project/algorithm/lambda.cpp" "CMakeFiles/algorithm.dir/lambda.cpp.obj" "gcc" "CMakeFiles/algorithm.dir/lambda.cpp.obj.d"
+  "D:/c_project/algorithm/reviseIterator.cc" "CMakeFiles/algorithm.dir/reviseIterator.cc.obj" "gcc" "CMakeFiles/algorithm.dir/reviseIterator.cc.obj.d"
   )
 
 # Targets to which this target links.

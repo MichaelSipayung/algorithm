@@ -108,8 +108,7 @@ int main(){
     imBind.open("writeThat.txt" , std::ios::out);
     std::ostream writeT(&imBind);
     std::for_each(reArr.begin(),reArr.end(),std::bind(outPr,std::ref(writeT),_1,'\n'));
-
-
+    
 
 
 

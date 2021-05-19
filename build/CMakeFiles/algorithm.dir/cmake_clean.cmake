@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algorithm.dir/lambda.cpp.obj"
-  "CMakeFiles/algorithm.dir/lambda.cpp.obj.d"
+  "CMakeFiles/algorithm.dir/reviseIterator.cc.obj"
+  "CMakeFiles/algorithm.dir/reviseIterator.cc.obj.d"
   "algorithm.exe"
   "algorithm.exe.manifest"
   "algorithm.pdb"

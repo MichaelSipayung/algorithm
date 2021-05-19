@@ -522,29 +522,29 @@ ContinuousMemCheck/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ContinuousMemCheck.dir\build.make CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
-lambda.obj: lambda.cpp.obj
-.PHONY : lambda.obj
+reviseIterator.obj: reviseIterator.cc.obj
+.PHONY : reviseIterator.obj
 
 # target to build an object file
-lambda.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.obj
-.PHONY : lambda.cpp.obj
+reviseIterator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/reviseIterator.cc.obj
+.PHONY : reviseIterator.cc.obj
 
-lambda.i: lambda.cpp.i
-.PHONY : lambda.i
+reviseIterator.i: reviseIterator.cc.i
+.PHONY : reviseIterator.i
 
 # target to preprocess a source file
-lambda.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.i
-.PHONY : lambda.cpp.i
+reviseIterator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/reviseIterator.cc.i
+.PHONY : reviseIterator.cc.i
 
-lambda.s: lambda.cpp.s
-.PHONY : lambda.s
+reviseIterator.s: reviseIterator.cc.s
+.PHONY : reviseIterator.s
 
 # target to generate assembly for a file
-lambda.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/lambda.cpp.s
-.PHONY : lambda.cpp.s
+reviseIterator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/reviseIterator.cc.s
+.PHONY : reviseIterator.cc.s
 
 # Help Target
 help:
@@ -586,9 +586,9 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... algorithm
-	@echo ... lambda.obj
-	@echo ... lambda.i
-	@echo ... lambda.s
+	@echo ... reviseIterator.obj
+	@echo ... reviseIterator.i
+	@echo ... reviseIterator.s
 .PHONY : help
 
 

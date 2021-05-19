@@ -1,7 +1,7 @@
 [
 {
   "directory": "D:/c_project/algorithm/build",
-  "command": "D:\\mingw\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\algorithm.dir\\lambda.cpp.obj -c D:\\c_project\\algorithm\\lambda.cpp",
-  "file": "D:/c_project/algorithm/lambda.cpp"
+  "command": "D:\\mingw\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\algorithm.dir\\reviseIterator.cc.obj -c D:\\c_project\\algorithm\\reviseIterator.cc",
+  "file": "D:/c_project/algorithm/reviseIterator.cc"
 }
 ]
