@@ -169,8 +169,26 @@ int main(){
         std::cout<<i<<"|";
     }
     std::cout<<"]"<<std::endl;
+    std::vector<int> lapOne{1,2,3,4,5};
+    std::vector<int> lapTwo{2,4,5,6,7};
+
+    //std::iota(lapOne.begin(),lapOne.end(),1);
+    //std::iota(lapTwo.begin(),lapTwo.end(),2);
+    std::cout<<"Test merge \t:[";
+    std::merge(lapOne.begin(),lapOne.end(),lapTwo.begin(),lapTwo.end(),std::back_inserter(lapTwo));
+    for (auto &i : lapTwo)
+    {
+        std::cout<<i<<"|";
+    }
+
+    std::cout<<"]"<<std::endl;
+    std::cout<<"Size after merge\t:[" <<lapTwo.size()<<"]"<<std::endl;
 
     
+
+
+
+
 
 
 }
